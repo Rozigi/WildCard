@@ -13,9 +13,54 @@
 ---Watch Videos on DataBase Index.
 **/
 
-USE SQLTrainingCase
+
+--UpperCase i'e to capitalise a row
+
+
+SELECT [Name]
+      ,Upper (Type) as Type_Cap
+	  ,[Type]
+      ,[Rating]
+      ,[Stars]
+      ,[Qty]
+      ,[Price]
+  FROM [SqlTraining].[dbo].[Movies]  
+
+
+  
+SELECT[Name]
+      ,[Type]
+	   ,Lower (Rating) as Type_Low
+      ,[Rating]
+      ,[Stars]
+      ,[Qty]
+      ,[Price]
+  FROM [SqlTraining].[dbo].[Movies]
+
+
+
+  
+SELECT,[Name]
+      ,[Type]
+      ,[Rating]
+      ,[Stars]
+      ,[Qty]
+      ,[Price]
+  FROM [SqlTraining].[dbo].[Movies]
+
+
+  
+SELECT,[Name]
+      ,[Type]
+      ,[Rating]
+      ,[Stars]
+      ,[Qty]
+      ,[Price]
+  FROM [SqlTraining].[dbo].[Movies]
+
+USE SQLTrainingCase 
 SELECT  [EmployeeID]
-	,UPPER (LastName+ ' '+FirstName+' '+MiddleName)	AS EmployeeName
+		,UPPER (LastName+ ' '+FirstName+' '+MiddleName)	AS EmployeeName
       ,[LastName]
       ,[FirstName]
       ,[MiddleName]
